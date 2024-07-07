@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test Booking</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Lab Test Booking</h1>
+    </header>
+    <form>
+        <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div>
+            <label for="patientId">Patient ID (if exists):</label>
+            <input type="text" id="patientId" name="patientId">
+        </div>
+        <div>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+        </div>
+        <div>
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+        </div>
+        <div>
+            <label for="house">House Number:</label>
+            <input type="text" id="house" name="house" required>
+        </div>
+        <div>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required>
+        </div>
+        <div>
+            <label for="area">Area:</label>
+            <input type="text" id="area" name="area" required>
+        </div>
+        <div>
+            <label for="district">District:</label>
+            <select id="district" name="district" required>
+                <option value="">Choose</option>
+                <option value="District1">District1</option>
+                <option value="District2">District2</option>
+                <option value="District3">District3</option>
+            </select>
+        </div>
+        <div>
+            <label>Choose the Test Type:</label>
+            <div>
+                <input type="checkbox" id="cbc" name="testType" value="CBC">
+                <label for="cbc">CBC</label>
+            </div>
+            <div>
+                <input type="checkbox" id="urine" name="testType" value="Complete Urine">
+                <label for="urine">Complete Urine</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lipid" name="testType" value="Lipid Profile">
+                <label for="lipid">Lipid Profile</label>
+            </div>
+            <div>
+                <input type="checkbox" id="tsh" name="testType" value="Thyroid Stimulating Hormone(TSH)">
+                <label for="tsh">Thyroid Stimulating Hormone(TSH)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="glucose" name="testType" value="Glucose Test">
+                <label for="glucose">Glucose Test</label>
+            </div>
+        </div>
+        <div>
+            <label>Do you want a hard copy of the report also?</label>
+            <div>
+                <input type="radio" id="yes" name="hardcopy" value="yes" required>
+                <label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="no" name="hardcopy" value="no" required>
+                <label for="no">No</label>
+            </div>
+        </div>
+        <div>
+            <label for="date">Select Your Comfortable Date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <div>
+            <label for="time">Select Your Comfortable Time:</label>
+            <input type="time" id="time" name="time" required>
+        </div>
+        <div>
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+    <aside>
+        <img src="images/labtest.jpg" alt="Lab Test">
+    </aside>
+</body>
+</html>
+
+
